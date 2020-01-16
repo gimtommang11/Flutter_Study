@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 class RandomWordsState extends State<RandomWords> {
   //제네릭 형태, Random... 의 상태를 유지한다고. redux같은 느낌
   final List<WordPair> _suggestions =
-      <WordPair>[]; // _(underscore)는 private하게 만들어 주는 역할이다
+      <WordPair>[]; // _(underscore)는 네이밍 컨벤션으로, 필드 내의 변수라는것을 나타냄
   final TextStyle _biggerFont = const TextStyle(fontSize: 18);
   final Set<WordPair> _saved =
       Set<WordPair>(); //set: 중복 허용을 하지 않는 리스트 _saved는 사용자가 좋아요 표시한 단어들.
